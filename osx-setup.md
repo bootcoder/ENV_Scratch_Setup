@@ -77,7 +77,7 @@
   4. Check the install versions of Ruby with rbenv.
   ``` rbenv --versions ```
 
-  5. Now install a couple versions of Ruby. Here are some suggestions, you do you boo.
+  5. Now install a couple versions of Ruby. Here are some suggestions:
     - ``` rbenv install 2.2.1 ```
     - ``` rbenv install 2.0.0-p353 ```
     - ``` rbenv install 2.1.2 ```
