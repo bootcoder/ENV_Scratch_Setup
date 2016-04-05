@@ -30,7 +30,7 @@
   2. Check Git version
     ``` git --version ```
 
-  3. Which should return you something like
+  3. Which should return you _something like_
     ``` git version 2.2.2 ```
 
   4. Set global Git variables. (Fill in the blanks where needed)
@@ -71,7 +71,7 @@
   2. Check rbenv version to confirm installation.
   ``` rbenv -v ```
 
-  3. Which should return you something like
+  3. Which should return you _something like_
   ``` rbenv 0.4.0 ```
 
   4. Check the install versions of Ruby with rbenv.
@@ -97,13 +97,13 @@
   2. Check node version to confirm installation.
     ``` node -v ```
 
-  3. Which should return something like
+  3. Which should return _something like_
     ``` v4.1.1 ```
 
   4. Check NPM version to confirm installation.
     ``` npm -v ```
 
-  5. Which should return something like
+  5. Which should return _something like_
     ``` 2.14.4 ```
 
 ### SublimeText 3
@@ -121,7 +121,7 @@
   2. Check heroku version to confirm installation.
   ``` heroku --version ```
 
-  3. Which should return something like
+  3. Which should return _something like_
   ```bash
   heroku-toolbelt/3.42.45 (x86_64-darwin10.8.0) ruby/1.9.3
   heroku-cli/4.29.0-cac96d9 (amd64-darwin) go1.6
@@ -156,7 +156,7 @@
 ##### Optional settings
 
   16. Click sub tab general
-  17. Deselect copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my flycut)
+  17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
   18 . Click sub tab colors
   19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
 
@@ -167,7 +167,7 @@
   4. Drag the Spectacle app into the applications folder
   5. Use ‘spotlight’ to open spectacle for the first time
     - cmd + spacebar to open spotlight
-    - type spectacle hit return when you see it autopopulated
+    - type spectacle hit return when you see it auto-populated
   6. Choose open
   7. Choose open system preferences
   8. Click the lock in the lower left
@@ -197,7 +197,7 @@
   3. Check postgresql version to confirm installation.
   ``` psql --version ```
 
-  4. Which should return something like
+  4. Which should return _something like_
   ``` psql (PostgreSQL) 9.4.0 ```
 
 ### sqlite3
@@ -208,7 +208,7 @@
   2. Check sqlite3 version to confirm installation.
   ``` sqlite3 --version ```
 
-  3. Which should return something like
+  3. Which should return _something like_
   ``` 3.8.5 2014-08-15 22:37:57 c8ade949d4a2eb3bba4702a4a0e17b405e9b6ace ```
 
 ### mysql
@@ -227,7 +227,7 @@
   2. Check mysql version to confirm installation.
   ``` mysql --version ```
 
-  3. Which should return something like
+  3. Which should return _something like_
   ``` mysql  Ver 14.14 Distrib 5.7.11, for osx10.10 (x86_64) using  EditLine wrapper ```
 
 ### MongoDB
@@ -238,7 +238,7 @@
   2. Check Mongo version to confirm installation.
   ``` mongo —version ```
 
-  3. Which should return something like
+  3. Which should return _something like_
   ``` MongoDB shell version: 3.0.4 ```
 
 ### Rails
