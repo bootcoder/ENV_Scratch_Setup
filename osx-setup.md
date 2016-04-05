@@ -174,6 +174,9 @@
   9. Enter system password
   10. Check the box next to spectacle
   11. Close system prefs
+  12. Open Spectacle Preferences
+  13. Click the right slider arrow at the bottom
+  14. Check ``` Launch Spectacle at login ```
 
 ### postgres
 
@@ -243,6 +246,18 @@
 
 ### Rails
 
+  1. Install Rails via Gem
+  ``` gem install rails ```
+
+  2. Check Rails version to confirm installation.
+  ``` rails —v ```
+
+  3. Which should return _something like_
+  ``` Rails 4.2.6 ```
+
+  ProTip: Don't ever EVER use sudo to install a GEM. IDC what the internet tells you. If you are using sudo to install a GEM you are doing it WRONG.
+
+
 ### Chrome
   1. Download [Chrome](https://www.google.com/chrome/browser/desktop/)
   2. Open downloads in finder
@@ -291,6 +306,12 @@
     - Options subtab
       - Toggle hide hat on Alfred window
       - Toggle hide menu bar icon
+
+### System Settings
+- Right-click the battery in the menu bar. Toggle on ``` Show Percentage ```
+- Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
+-
+
 
 ## Additional Recommended Applications
 
