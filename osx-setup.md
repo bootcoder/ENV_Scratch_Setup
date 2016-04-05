@@ -83,6 +83,12 @@
     - ``` rbenv install 2.1.2 ```
     - ``` rbenv install 1.9.3-p551 ```
 
+  6. Re-Check the install versions of Ruby with rbenv.
+  ``` rbenv --versions ```
+
+  7. Set a Global Ruby version (Can be any version you just installed)
+  ``` rbenv global 2.2.1 ```
+
 
 ### Node - NPM
 
