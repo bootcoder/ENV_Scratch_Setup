@@ -179,6 +179,12 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 }
 ```
 
+5. Check sublime to confirm installation.
+``` subl . ```
+
+This should open a sublime window for the current directory.
+
+
 
 ### heroku toolbelt
   1. Install heroku toolbelt vai homebrew
