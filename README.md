@@ -1,11 +1,17 @@
 ## El Capitain Fresh Install
 
+This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes may not solve your problem.
+
+#### Estimated time for competition
+
+2 hours
+
 ### HomeBrew
 
   Following this [guide](https://coolestguidesontheplanet.com/installing-homebrew-on-os-x-el-capitan-10-11-package-manager-for-unix-apps/
 ):
 
-  1. Install Xcode from the App Store (This will take A WHILE)
+  1. Install Xcode from the App Store application. (This will take A WHILE)
 
   2. Open terminal run ```xcode-select --install```
     - Follow the prompts
@@ -41,14 +47,6 @@
 
 
 ### dotfiles
-
-  **Bold == Notes**
-
-  **update with sublime, bash, gitconfig**
-
-  **update spec with documentation**
-
-  **update for sublime 3**
 
   1. From terminal change directory to the desktop.
 
@@ -200,15 +198,15 @@
   heroku-git@2.4.5
   ```
 
-### iterm 3
-  1. Download [iterm 3](https://www.iterm2.com/version3.html)
+### iTerm 3
+  1. Download [iTerm 3](https://www.iterm2.com/version3.html)
   2. Open finder
   3. Go to downloads
-  4. Drag the iterm app into the applications folder on the sidebar
-  5. Now open the applications folder grab the iterm app and drag it to your dock at the bottom of the screen.
-  6. cmd + spacebar enter iterm and hit return
+  4. Drag the iTerm app into the applications folder on the sidebar
+  5. Now open the applications folder grab the iTerm app and drag it to your dock at the bottom of the screen.
+  6. cmd + spacebar enter iTerm and hit return
   7. Choose open
-  8. Click iterm in the top left corner dropdown.
+  8. Click iTerm in the top left corner dropdown.
 
 ##### Base settings
 
@@ -225,7 +223,7 @@
 
   16. Click sub tab general
   17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
-  18 . Click sub tab colors
+  18. Click sub tab colors
   19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
 
 ### Spectacle
@@ -292,7 +290,6 @@
   ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
   launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
-
   ```
 
   2. Check mysql version to confirm installation.
