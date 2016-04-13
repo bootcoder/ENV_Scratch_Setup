@@ -241,6 +241,8 @@
   2. Check Mongo version to confirm installation.
   ``` mongo —version ```
 
+  ADD POST INSTALL NOTES FOR MONGO
+
   3. Which should return _something like_
   ``` MongoDB shell version: 3.0.4 ```
 
@@ -310,12 +312,29 @@
 ### System Settings
 - Right-click the battery in the menu bar. Toggle on ``` Show Percentage ```
 - Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
--
+- set global no ri no rdoc ``` echo "gem: --no-ri --no-rdoc" > ~/.gemrc ```
 
 
 ## Additional Recommended Applications
 
+Install from terminal
+
+- brew install hub
+- brew install memcached
+- brew install imagemagick
+- brew install tree
+
+Programs from where-ever
+
+- Dash
 - Private Internet Access
 - Flux
 - Dropbox
+- Chrome Extensions
+  - colorzilla
+  - currently
+  - jsonview
+  - web-developer
+  - One Tab
+  - Tab Scissors
 
