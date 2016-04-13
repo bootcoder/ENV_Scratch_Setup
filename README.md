@@ -87,6 +87,51 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   7. Set a Global Ruby version (Can be any version you just installed)
   ``` rbenv global 2.2.1 ```
 
+### iTerm 3
+  1. Download [iTerm 3](https://www.iterm2.com/version3.html)
+  2. Open finder
+  3. Go to downloads
+  4. Drag the iTerm app into the applications folder on the sidebar
+  5. Now open the applications folder grab the iTerm app and drag it to your dock at the bottom of the screen.
+  6. cmd + spacebar enter iTerm and hit return
+  7. Choose open
+  8. Click iTerm in the top left corner dropdown.
+
+##### Base settings
+
+  9. Click preferences
+  10. Click the keys tab
+  11. Check the box for hotkey in lower left
+    - I use ``` cmd + \ ```
+  12. Click the profiles tab
+  13. Click the window sub tab
+  14. Slide the transparency slider over to about 20% (the goal is to be able to read text in a browser behind the window but not have it be bright enough to bother you)
+  15. Click the sub tab terminal, change scroll back lines to 10,000
+
+##### Optional settings
+
+  16. Click sub tab general
+  17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
+  18. Click sub tab colors
+  19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
+
+### Spectacle
+  1. Download [Spectacle](https://www.spectacleapp.com/)
+  2. Open finder
+  3. Go to downloads
+  4. Drag the Spectacle app into the applications folder
+  5. Use ‘spotlight’ to open spectacle for the first time
+    - cmd + spacebar to open spotlight
+    - type spectacle hit return when you see it auto-populated
+  6. Choose open
+  7. Choose open system preferences
+  8. Click the lock in the lower left
+  9. Enter system password
+  10. Check the box next to spectacle
+  11. Close system prefs
+  12. Open Spectacle Preferences
+  13. Click the right slider arrow at the bottom
+  14. Check ``` Launch Spectacle at login ```
 
 ### Node - NPM
 
@@ -144,47 +189,45 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 
   4. Apply custom user settings (open user settings with ```cmd+shift+p user```)
 
+    ```
+    {
+    "atomic_save": false,
+    "bold_folder_labels": true,
+    "caret_style": "phase",
+    "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+    "draw_white_space": "selection",
+    "ensure_newline_at_eof_on_save": true,
+    "fade_fold_buttons": false,
+    "font_face": "Inconsolata",
+    "font_size": 14,
+    "highlight_line": true,
+    "ignored_packages":
+    [
+      "Emmet",
+      "PlainTasks",
+      "RubyTest",
+      "Theme - Farzher",
+      "Vintage"
+    ],
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
+    "rulers":
+    [
+      80
+    ],
+    "save_on_focus_lost": true,
+    "spell_check": true,
+    "tab_size": 2,
+    "theme": "Tech49.sublime-theme",
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": true
+  }
   ```
-  {
-  "atomic_save": false,
-  "bold_folder_labels": true,
-  "caret_style": "phase",
-  "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
-  "draw_white_space": "selection",
-  "ensure_newline_at_eof_on_save": true,
-  "fade_fold_buttons": false,
-  "font_face": "Inconsolata",
-  "font_size": 14,
-  "highlight_line": true,
-  "ignored_packages":
-  [
-    "Emmet",
-    "PlainTasks",
-    "RubyTest",
-    "Theme - Farzher",
-    "Vintage"
-  ],
-  "line_padding_bottom": 1,
-  "line_padding_top": 1,
-  "rulers":
-  [
-    80
-  ],
-  "save_on_focus_lost": true,
-  "spell_check": true,
-  "tab_size": 2,
-  "theme": "Tech49.sublime-theme",
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true
-}
-```
 
-5. Check sublime to confirm installation.
-``` subl . ```
+  5. Check sublime to confirm installation.
+  In iTerm ``` subl . ```
 
-This should open a sublime window for the current directory.
-
-
+  This should open a sublime window for the current directory.
 
 ### heroku toolbelt
   1. Install heroku toolbelt vai homebrew
@@ -204,51 +247,6 @@ This should open a sublime window for the current directory.
   heroku-git@2.4.5
   ```
 
-### iTerm 3
-  1. Download [iTerm 3](https://www.iterm2.com/version3.html)
-  2. Open finder
-  3. Go to downloads
-  4. Drag the iTerm app into the applications folder on the sidebar
-  5. Now open the applications folder grab the iTerm app and drag it to your dock at the bottom of the screen.
-  6. cmd + spacebar enter iTerm and hit return
-  7. Choose open
-  8. Click iTerm in the top left corner dropdown.
-
-##### Base settings
-
-  9. Click preferences
-  10. Click the keys tab
-  11. Check the box for hotkey in lower left
-    - I use ``` cmd + \ ```
-  12. Click the profiles tab
-  13. Click the window sub tab
-  14. Slide the transparency slider over to about 20% (the goal is to be able to read text in a browser behind the window but not have it be bright enough to bother you)
-  15. Click the sub tab terminal, change scroll back lines to 10,000
-
-##### Optional settings
-
-  16. Click sub tab general
-  17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
-  18. Click sub tab colors
-  19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
-
-### Spectacle
-  1. Download [Spectacle](https://www.spectacleapp.com/)
-  2. Open finder
-  3. Go to downloads
-  4. Drag the Spectacle app into the applications folder
-  5. Use ‘spotlight’ to open spectacle for the first time
-    - cmd + spacebar to open spotlight
-    - type spectacle hit return when you see it auto-populated
-  6. Choose open
-  7. Choose open system preferences
-  8. Click the lock in the lower left
-  9. Enter system password
-  10. Check the box next to spectacle
-  11. Close system prefs
-  12. Open Spectacle Preferences
-  13. Click the right slider arrow at the bottom
-  14. Check ``` Launch Spectacle at login ```
 
 ### postgres
 
