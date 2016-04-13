@@ -109,10 +109,78 @@
 ### SublimeText 3
   1. Install Sublime Text 3 via Homebrew
 
-  - ```brew install caskroom/cask/brew-cask```
-  - ```brew tap caskroom/versions```
-  - ```brew cask install sublime-text3```
-  - Provide system password when prompted
+    - ```brew install caskroom/cask/brew-cask```
+    - ```brew tap caskroom/versions```
+    - ```brew cask install sublime-text3```
+    - Provide system password when prompted
+
+  2. Install Sublime Text 3 Package Manager
+
+    - Copy the script from [ST3](https://packagecontrol.io/installation#st3)
+    - Click View menu in sublime, then click Show console.
+    - Paste the script into the console and hit return.
+    - When finished restart Sublime Text.
+
+  3. Install the following packages (install packages with ```cmd+shift+p install```)
+
+    - All Autocomplete
+    - Better CoffeeScript
+    - BracketHighlighter
+    - ERB Snippets
+    - GitGutter
+    - Haml
+    - JSLint
+    - JSX
+    - Markdown Preview
+    - Package Control
+    - PowerCursors
+    - SASS
+    - SideBarEnhancements
+    - sublime-github
+    - SublimeLinter
+    - SublimeLinter-haml
+    - SublimeLinter-ruby
+    - TernJS
+    - Tomorrow Color Scheme
+    - Theme - Tech49
+
+  4. Apply custom user settings (open user settings with ```cmd+shift+p user```)
+
+  ```
+  {
+  "atomic_save": false,
+  "bold_folder_labels": true,
+  "caret_style": "phase",
+  "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+  "draw_white_space": "selection",
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "font_face": "Inconsolata",
+  "font_size": 14,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Emmet",
+    "PlainTasks",
+    "RubyTest",
+    "Theme - Farzher",
+    "Vintage"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "rulers":
+  [
+    80
+  ],
+  "save_on_focus_lost": true,
+  "spell_check": true,
+  "tab_size": 2,
+  "theme": "Tech49.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+}
+```
+
 
 ### heroku toolbelt
   1. Install heroku toolbelt vai homebrew
