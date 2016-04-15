@@ -386,24 +386,24 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 
 ## Additional Recommended Applications
 
-Install from terminal
+Terminal Apps
 
-- brew install hub
-- brew install memcached
-- brew install imagemagick
-- brew install tree
+- ``` brew install hub ``` -- Extended Git commands in terminal.
+- ``` brew install imagemagick ``` -- Super awesome gem for dealing with image files.
+- ``` brew install tree ``` -- Nice way to display tree structure of a directory in terminal.
 
-Programs from where-ever
+OSX Apps
 
-- Dash
-- Private Internet Access
-- Flux
-- Dropbox
+- Dash -- Great documentation and snippet management software.
+- Postman -- Simple easy API exploration tool.
+- Private Internet Access -- Best $40.00 I spend all year EVERY YEAR. Secure INTERNET connection from anywhere as well as an easy bypass to geographical restrictions. Moral of the story: I can do banking stuff from open WIFI in Starbucks while streaming a soccer match that is in blackout anywhere outside of the UK. All with 0 worries.
+- Flux -- Adjusts the chroma setting of your display based on the time of day.
+- Dropbox -- Every line of code I've ever written resides in my dropbox. Moral of the story: I can throw my laptop out the window and give 0 cares.
 - Chrome Extensions
-  - colorzilla
-  - currently
-  - jsonview
-  - web-developer
-  - One Tab
-  - Tab Scissors
+  - colorzilla -- Helpful color picker.
+  - currently -- Nice new tab page, clean and useful
+  - jsonview -- Returning json from some page, why not have it look decent....
+  - web-developer -- Collection of dev tools to help.
+  - One Tab -- Collapse all tabs down into a single tab that lists them out in a shareable format. Does not retain active session. Since each tab is a separate process this can be a HUGE memory saver. Best extension ever.
+  - Tab Scissors -- Use in conjunction with OneTab. Tab scissors takes everything from the right of the current tab and opens it in a new window, removing it from the current window. Super useful.
 
