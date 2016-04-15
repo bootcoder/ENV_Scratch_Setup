@@ -73,7 +73,7 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   ``` rbenv 0.4.0 ```
 
   4. Check the install versions of Ruby with rbenv.
-  ``` rbenv --versions ```
+  ``` rbenv versions ```
 
   5. Now install a couple versions of Ruby. Here are some suggestions:
     - ``` rbenv install 2.2.1 ```
@@ -82,7 +82,7 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
     - ``` rbenv install 1.9.3-p551 ```
 
   6. Re-Check the install versions of Ruby with rbenv.
-  ``` rbenv --versions ```
+  ``` rbenv versions ```
 
   7. Set a Global Ruby version (Can be any version you just installed)
   ``` rbenv global 2.2.1 ```
