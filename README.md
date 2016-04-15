@@ -41,7 +41,7 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 
   4. Set global Git variables. (Fill in the blanks where needed)
 
-    - ``` git config --global user.name "Your Name" ```
+    - ``` git config --global user.name "The name you want displayed on Git, could be Username or someName" ```
 
     - ``` git config --global user.email you@example.com ```
 
@@ -265,7 +265,7 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
   ```
 
-  Run these commands to setup autostart for postgres.
+  Run the commands above to setup && autostart Postgres.
 
   3. Check postgresql version to confirm installation.
   ``` psql --version ```
