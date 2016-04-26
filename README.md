@@ -407,3 +407,6 @@ OSX Apps
   - One Tab -- Collapse all tabs down into a single tab that lists them out in a shareable format. Does not retain active session. Since each tab is a separate process this can be a HUGE memory saver. Best extension ever.
   - Tab Scissors -- Use in conjunction with OneTab. Tab scissors takes everything from the right of the current tab and opens it in a new window, removing it from the current window. Super useful.
 
+
+## Notes
+- Add Brew install Redis
