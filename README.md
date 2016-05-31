@@ -1,6 +1,6 @@
 ## El Capitain Fresh Install
 
-This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes may not solve your problem.
+This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes most likely will not solve your problem.
 
 #### Estimated time for competition
 
@@ -366,6 +366,12 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
     - Now close spotlight settings
     - Click back or reopen alfred settings
     - Set Alfred hotkey to cmd+Space under Alfred preferences
+  9. Disable Spotlight indexing to improve performance.
+    - Open Alfred ``` cmd + spacebar ```
+    - Enter ``` spotlight ``` to open spotlight preferences
+    - Under the 'Search Results' tab, disable all options
+    - Disable 'Allow Spotlight Suggestions in Spotlight and Look up'
+
 
 #### Settings
   1. Set your location to the United States
