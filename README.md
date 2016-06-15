@@ -388,6 +388,13 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 - Right-click the battery in the menu bar. Toggle on ``` Show Percentage ```
 - Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
 - set global no ri no rdoc ``` echo "gem: --no-ri --no-rdoc" > ~/.gemrc ```
+- ```subl ~/.rspec``` to open global rspec settings. Then add
+```
+--color
+--format documentation
+```
+
+
 
 
 ## Additional Recommended Applications
