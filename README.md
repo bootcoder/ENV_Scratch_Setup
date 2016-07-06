@@ -17,9 +17,11 @@
 
 
 #### Forward:
-I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. **Note:** If your here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
+I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. **Note:** If you're here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
 
 It is recommended that you follow the guide Top => Bottom. As with all things programming, **Order Matters**.
+
+You should be comfortable with the command line before starting this tutorial. Read this [Command Line Quick Reference & Tips](http://learntocodewith.me/command-line/unix-command-cheat-sheet/) if you need a refresher.
 
 If you feel super strongly about something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
 
@@ -100,6 +102,7 @@ This is the password you use to login to OSX on the current computer. If you are
 ### dotfiles
 
   1. From terminal change directory to the desktop.
+  ```cd ~/Desktop```
 
   2. Clone Topher's DotFiles onto the desktop.
   ``` git clone https://github.com/supertopher/dotfiles.git ```
@@ -110,7 +113,7 @@ This is the password you use to login to OSX on the current computer. If you are
   4. Run the script to acquire goodies.
   ``` ./install ```
 
-  5. Restart terminal to see changes.
+  5. Restart or open a new terminal tab to see changes.
 
   6. Go up one level ```cd ..``` and remove the dotfiles directory
    ```rm -rf dotfiles```
