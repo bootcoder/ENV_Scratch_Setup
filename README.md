@@ -92,9 +92,9 @@ This is the password you use to login to OSX on the current computer. If you are
 
   4. Set global Git variables. (Fill in the blanks where needed)
 
-    - ``` git config --global user.name "The name you want displayed on Git, could be Username or someName" ```
+    - ``` git config --global user.name "BLANK (The name you want displayed on Git, could be Username or someName)" ```
 
-    - ``` git config --global user.email you@example.com ```
+    - ``` git config --global user.email "BLANK (ex: you@example.com) ```
 
 
 ### dotfiles
@@ -129,11 +129,9 @@ This is the password you use to login to OSX on the current computer. If you are
   4. Check the install versions of Ruby with rbenv.
   ``` rbenv versions ```
 
-  5. Now install a couple versions of Ruby. Here are some suggestions:
-    - ``` rbenv install 2.2.1 ```
+  5. Now install a couple versions of Ruby. This will typically take 5 - 10 minutes. Here are some suggestions:
+    - ``` rbenv install 2.3.1 ```
     - ``` rbenv install 2.0.0-p353 ```
-    - ``` rbenv install 2.1.2 ```
-    - ``` rbenv install 1.9.3-p551 ```
 
   6. Re-Check the install versions of Ruby with rbenv.
   ``` rbenv versions ```
