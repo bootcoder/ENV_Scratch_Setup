@@ -1,10 +1,39 @@
 ## El Capitain Fresh Install
 
-This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes most likely will not solve your problem.
-
 #### Estimated time for competition
 
 2 hours
+
+#### Forward:
+This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes most likely will not solve your problem.
+
+
+If you feel super strongly about something or if you find a pain point I didn't document, *Please* open an issue.
+
+As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard, it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```....
+
+## Table of Contents:
+- [HomeBrew](#homebrew)
+- [Git](#git)
+- [dotfiles](#dotfiles)
+- [rbenv](#rbenv)
+- [iterm](#iterm)
+- [spectacle](#spectacle)
+- [Sublime Text 3](#sublimetext-3)
+- [Heroku toolbelt](#heroku-toolbelt)
+- [Node - NPM](#node---npm)
+- [postgres](#postgres)
+- [sqlite3](#sqlite3)
+- [mysql](#mysql)
+- [MongoDB](#mongodb)
+- [Rails](#rails)
+- [Rails](#rails)
+- [Chrome](#chrome)
+- [Firefox](#firefox)
+- [FlyCut](#flycut)
+- [Alfred 2](#alfred-2)
+- [Initial System Settings](#system-settings)
+- [Software Recommendations](#additional-recommended-applications)
 
 ### HomeBrew
 
@@ -87,7 +116,7 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   7. Set a Global Ruby version (Can be any version you just installed)
   ``` rbenv global 2.2.1 ```
 
-### iTerm 3
+### iTerm
   1. Download [iTerm 3](https://www.iterm2.com/version3.html)
   2. Open finder
   3. Go to downloads
@@ -132,22 +161,6 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   12. Open Spectacle Preferences
   13. Click the right slider arrow at the bottom
   14. Check ``` Launch Spectacle at login ```
-
-### Node - NPM
-
-  1. Install Node via Homebrew
-    ``` brew install node ```
-  2. Check node version to confirm installation.
-    ``` node -v ```
-
-  3. Which should return _something like_
-    ``` v4.1.1 ```
-
-  4. Check NPM version to confirm installation.
-    ``` npm -v ```
-
-  5. Which should return _something like_
-    ``` 2.14.4 ```
 
 ### SublimeText 3
   1. Install Sublime Text 3 via Homebrew
@@ -247,6 +260,21 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
   heroku-git@2.4.5
   ```
 
+### Node - NPM
+
+  1. Install Node via Homebrew
+    ``` brew install node ```
+  2. Check node version to confirm installation.
+    ``` node -v ```
+
+  3. Which should return _something like_
+    ``` v4.1.1 ```
+
+  4. Check NPM version to confirm installation.
+    ``` npm -v ```
+
+  5. Which should return _something like_
+    ``` 2.14.4 ```
 
 ### postgres
 
