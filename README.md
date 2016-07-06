@@ -71,7 +71,9 @@ This is the password you use to login to OSX on the current computer. If you are
 
     ``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
 
-  Homebrew ProTip: Before brewing ANYTHING you should first run and resolve,
+    This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule.
+
+  Homebrew ProTip: Before brewing anything now and in the future, you should first run and resolve,
 
     ``` brew update ```
 
