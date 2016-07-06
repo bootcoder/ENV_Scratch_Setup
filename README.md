@@ -1,24 +1,41 @@
 ## El Capitain Fresh Install
 
-#### Estimated time for competition
+### Estimated time for competition: 2:00 Hours
 
-2 hours
+## Table of Contents:
+- General
+  - [Start Here](#forward) • [Initial System Settings](#system-settings) • [Software Recommendations](#additional-recommended-applications)
 
-### Forward:
-This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes most likely will not solve your problem.
+- Languages / Frameworks
+  - [Xcode](#xcode) • [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#herok •toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
+
+- Applications
+  - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred 2](#alfred-2)
+
+- Databases
+ - [postgres](#postgres) • [sqlite3](#sqlite3) • [mysql](#mysql) • [MongoDB](#mongodb)
 
 
-If you feel super strongly about something or if you find a pain point I didn't document, *Please open an issue.* Feedback always greatly appreciated.
+#### Forward:
+I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. **Note:** If your here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
 
-As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```.
+It is recommended that you follow the guide Top => Bottom. As with all things programming, **Order Matters**.
 
-When I say open this program or that, the best way IMHO is via *Spotlight*. System wide you can access Spotlight by pressing CMD+Spacebar, then enter the program or file you are searching for.
+If you feel super strongly about something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
+
+As to the subject matter itself, if you don't agree in my choice of software that's awesome!
+
+But for seriouslies, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE HERE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE HERE```.
+
+### B-E-EFFICIENT
+
+When I say open this program or that, the quickest path is usually via *Spotlight*. System wide you can access Spotlight by pressing CMD+Spacebar, then enter the program or file you are searching for.
 
 ```
 CMD+Spacebar Terminal
 ```
 
-Will open the terminal application. You'll find it's fuzzy search impressive, needing only a few characters to open popular apps.
+Will open the terminal application. You'll find it's fuzzy search impressive, needing only a few characters to open popular apps. This advice still hold true even though I will instruct you to replace Spotlight with Alfred 2 in this tutorial. If you'd like more thoughts on efficiency as a dev check out [this link](https://github.com/bootcoder/tipsNtricks)
 
 ### A note on Passwords:
 
@@ -36,43 +53,21 @@ Apple ID can be used to access the App Store as well as sync different devices v
 
 This is the password you use to login to OSX on the current computer. If you are prompted for a password at the terminal it is asking for the System Password.
 
-## Table of Contents:
-- [HomeBrew](#homebrew)
-- [Git](#git)
-- [dotfiles](#dotfiles)
-- [rbenv](#rbenv)
-- [iterm](#iterm)
-- [spectacle](#spectacle)
-- [Sublime Text 3](#sublimetext-3)
-- [Heroku toolbelt](#heroku-toolbelt)
-- [Node - NPM](#node---npm)
-- [postgres](#postgres)
-- [sqlite3](#sqlite3)
-- [mysql](#mysql)
-- [MongoDB](#mongodb)
-- [Rails](#rails)
-- [Rails](#rails)
-- [Chrome](#chrome)
-- [Firefox](#firefox)
-- [FlyCut](#flycut)
-- [Alfred 2](#alfred-2)
-- [Initial System Settings](#system-settings)
-- [Software Recommendations](#additional-recommended-applications)
-
-### HomeBrew
-
-  Following this [guide](https://coolestguidesontheplanet.com/installing-homebrew-on-os-x-el-capitan-10-11-package-manager-for-unix-apps/
-):
+### Xcode
 
   1. Install Xcode from the App Store application. (This will take A WHILE)
     - Enter your AppleID credentials when prompted.
 
   2. Open terminal run ```xcode-select --install```
     - Follow the prompts
-    - When finished open Xcode
+    - When finished open the Xcode app
     - Agree to the license, enter your password, wait until the welcome screen comes up, then exit Xcode.
 
-  3. Install Homebrew with Curl.
+### HomeBrew
+
+  1. Install Homebrew with Curl.
+
+    In the terminal application run:
 
     ``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
 
@@ -114,6 +109,9 @@ This is the password you use to login to OSX on the current computer. If you are
   ``` ./install ```
 
   5. Restart terminal to see changes.
+
+  6. Go up one level ```cd ..``` and remove the dotfiles directory
+   ```rm -rf dotfiles```
 
 ### rbenv
 
@@ -226,6 +224,8 @@ This is the password you use to login to OSX on the current computer. If you are
     - Theme - Tech49
 
   4. Apply custom user settings (open user settings with ```cmd+shift+p user```)
+
+    **Note:** Some of these settings will break Sublime if the corresponding package is not installed. If you did not install theme || color scheme remove the lines before saving the file.
 
     ```
     {
@@ -438,19 +438,19 @@ This is the password you use to login to OSX on the current computer. If you are
       - Toggle hide menu bar icon
 
 ### System Settings
+
+Now that you're all installed and whatnot. Here are some recommended setting to apply to your machine.
+
 - Right-click the battery in the menu bar. Toggle on ``` Show Percentage ```
 - Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
-- set global no ri no rdoc
+- Set global no ri no rdoc
 ```bash
  echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 ```
-- set global rspec settings
+- Set global rspec settings
 ```bash
 echo $'--color\n--tty\n--format documentation' >> ~/.rspec
 ```
-
-
-
 
 ## Additional Recommended Applications
 
@@ -478,9 +478,3 @@ OSX Apps
 
 ## Notes
 - Add Brew install Redis
-
-
-
-
-
-echo '--color\n--tty\n--format documentation' >> ~/.rspec
