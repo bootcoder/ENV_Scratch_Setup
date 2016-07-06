@@ -10,7 +10,9 @@ This guide assumes you are starting from a clean installation of OSX El Capitain
 
 If you feel super strongly about something or if you find a pain point I didn't document, *Please* open an issue.
 
-As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard, it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```....
+As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard... it's cool.
+
+No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```.
 
 ## Table of Contents:
 - [HomeBrew](#homebrew)
@@ -415,11 +417,13 @@ As to the subject matter itself, if you don't agree in my choice of software tha
 ### System Settings
 - Right-click the battery in the menu bar. Toggle on ``` Show Percentage ```
 - Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
-- set global no ri no rdoc ``` echo "gem: --no-ri --no-rdoc" > ~/.gemrc ```
-- ```subl ~/.rspec``` to open global rspec settings. Then add
+- set global no ri no rdoc
+```bash
+ echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 ```
---color
---format documentation
+- set global rspec settings
+```bash
+echo $'--color\n--tty\n--format documentation' >> ~/.rspec
 ```
 
 
@@ -451,3 +455,9 @@ OSX Apps
 
 ## Notes
 - Add Brew install Redis
+
+
+
+
+
+echo '--color\n--tty\n--format documentation' >> ~/.rspec
