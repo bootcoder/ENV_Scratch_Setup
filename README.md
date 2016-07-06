@@ -4,15 +4,37 @@
 
 2 hours
 
-#### Forward:
+### Forward:
 This guide assumes you are starting from a clean installation of OSX El Capitain. Older versions of OSX should work as well. Clean is the key factor here. If your Ruby ENV is already mangled these notes most likely will not solve your problem.
 
 
-If you feel super strongly about something or if you find a pain point I didn't document, *Please* open an issue.
+If you feel super strongly about something or if you find a pain point I didn't document, *Please open an issue.* Feedback always greatly appreciated.
 
-As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard... it's cool.
+As to the subject matter itself, if you don't agree in my choice of software that's awesome! But really, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```.
 
-No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE```.
+When I say open this program or that, the best way IMHO is via *Spotlight*. System wide you can access Spotlight by pressing CMD+Spacebar, then enter the program or file you are searching for.
+
+```
+CMD+Spacebar Terminal
+```
+
+Will open the terminal application. You'll find it's fuzzy search impressive, needing only a few characters to open popular apps.
+
+### A note on Passwords:
+
+Your Apple ID and system passwords are most likely different. Be sure to keep both readily available throughout the installation process.
+
+**Apple ID**
+
+![apple-sign-in](apple_id_sign_in.png)
+
+Apple ID can be used to access the App Store as well as sync different devices via iCloud.
+
+**System Password**
+
+![system-password](username_password.jpg)
+
+This is the password you use to login to OSX on the current computer. If you are prompted for a password at the terminal it is asking for the System Password.
 
 ## Table of Contents:
 - [HomeBrew](#homebrew)
@@ -43,6 +65,7 @@ No need to track me down, shake me around and pontificate furiously whilst cycli
 ):
 
   1. Install Xcode from the App Store application. (This will take A WHILE)
+    - Enter your AppleID credentials when prompted.
 
   2. Open terminal run ```xcode-select --install```
     - Follow the prompts
