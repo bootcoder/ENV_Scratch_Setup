@@ -16,12 +16,22 @@
  - [postgres](#postgres) • [sqlite3](#sqlite3) • [mysql](#mysql) • [MongoDB](#mongodb)
 
 
-#### Forward:
-I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. **Note:** If you're here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
+## Forward:
+I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well.
+
+**Note:** If you're here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
 
 It is recommended that you follow the guide Top => Bottom. As with all things programming, **Order Matters**.
 
 You should be comfortable with the command line before starting this tutorial. Read this [Command Line Quick Reference & Tips](http://learntocodewith.me/command-line/unix-command-cheat-sheet/) if you need a refresher.
+
+This guide denotes terminal entries with the following character combination:
+```
+=>$
+```
+The dollar **$** symbol is frequently used in tutorials to denote a terminal entry. Just being extra clear here, because I see this mistake a lot. **Do Not** include the $ when you type out the commands into terminal. Also it's worth noting that your terminal prompt most likely does not look like mine.
+
+### Contributing:
 
 If you feel super strongly about something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
 
@@ -55,6 +65,8 @@ Apple ID can be used to access the App Store as well as sync different devices v
 
 This is the password you use to login to OSX on the current computer. If you are prompted for a password at the terminal it is asking for the System Password.
 
+---
+
 ### Xcode
 
   1. Install Xcode from the App Store application. (This will take A WHILE)
@@ -71,76 +83,87 @@ This is the password you use to login to OSX on the current computer. If you are
 
     In the terminal application run:
 
-    ``` ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
+    ``` =>$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
 
     This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule.
 
   Homebrew ProTip: Before brewing anything now and in the future, you should first run and resolve,
 
-    ``` brew update ```
+    ``` =>$ brew update ```
 
-    ``` brew doctor ```
+    ``` =>$ brew doctor ```
 
 ### Git
 
   1. Install Git via Homebrew
-  ``` brew install git ```
+  ``` =>$ brew install git ```
 
   2. Check Git version
-    ``` git --version ```
+    ``` =>$ git --version ```
 
   3. Which should return you _something like_
     ``` git version 2.2.2 ```
 
   4. Set global Git variables. (Fill in the blanks where needed)
 
-    - ``` git config --global user.name "BLANK (The name you want displayed on Git, could be Username or someName)" ```
+    - ``` =>$ git config --global user.name "BLANK (The name you want displayed on Git, could be Username or someName)" ```
 
-    - ``` git config --global user.email "BLANK (ex: you@example.com) ```
+    - ``` =>$ git config --global user.email "BLANK (ex: you@example.com) ```
 
 
 ### dotfiles
 
   1. From terminal change directory to the desktop.
-  ```cd ~/Desktop```
+  ```bash
+  =>$ cd ~/Desktop
+  ```
 
   2. Clone Topher's DotFiles onto the desktop.
-  ``` git clone https://github.com/supertopher/dotfiles.git ```
+  ```bash
+  =>$ git clone https://github.com/supertopher/dotfiles.git
+  ```
 
   3. Change directories into the repo.
-  ``` cd dotfiles ```
+  ```bash
+  =>$ cd dotfiles
+  ```
 
-  4. Run the script to acquire goodies.
-  ``` ./install ```
+  4. Run the script to acquire Bash goodies.
+  ```bash
+  =>$ ./install
+  ```
 
-  5. Restart or open a new terminal tab to see changes.
+  5. Restart or open a new terminal tab (CMD+t) to see changes. Any Bash changes will not apply to the current terminal session running.
 
-  6. Go up one level ```cd ..``` and remove the dotfiles directory
-   ```rm -rf dotfiles```
+  6. Go up one level and remove the dotfiles directory
+   ```bash
+   =>$ cd ..
+   =>$ rm -rf dotfiles
+   ```
 
 ### rbenv
 
   1. Install rbenv via Homebrew
-  ``` brew install rbenv ```
+  ``` =>$ brew install rbenv ```
 
   2. Check rbenv version to confirm installation.
-  ``` rbenv -v ```
+  ``` =>$ rbenv -v ```
 
   3. Which should return you _something like_
   ``` rbenv 0.4.0 ```
 
   4. Check the install versions of Ruby with rbenv.
-  ``` rbenv versions ```
+  ``` =>$ rbenv versions ```
 
-  5. Now install a couple versions of Ruby. This will typically take 5 - 10 minutes. Here are some suggestions:
-    - ``` rbenv install 2.3.1 ```
-    - ``` rbenv install 2.0.0-p353 ```
+  5. Now install a couple versions of Ruby. This will typically take 5 - 10 minutes a piece. Here are some suggested versions at the time of this writing:
+    - ``` =>$ rbenv install 2.3.1 ```
+    - ``` =>$ rbenv install 2.0.0-p353 ```
 
   6. Re-Check the install versions of Ruby with rbenv.
-  ``` rbenv versions ```
+  ``` =>$ rbenv versions ```
 
   7. Set a Global Ruby version (Can be any version you just installed)
-  ``` rbenv global 2.2.1 ```
+  ``` =>$ rbenv global 2.3.1 ```
 
 ### iTerm
   1. Download [iTerm 3](https://www.iterm2.com/version3.html)
@@ -159,15 +182,15 @@ This is the password you use to login to OSX on the current computer. If you are
   11. Check the box for hotkey in lower left
     - I use ``` cmd + \ ```
   12. Click the profiles tab
-  13. Click the window sub tab
+  13. Click the sub tab **window**
   14. Slide the transparency slider over to about 20% (the goal is to be able to read text in a browser behind the window but not have it be bright enough to bother you)
-  15. Click the sub tab terminal, change scroll back lines to 10,000
+  15. Click the sub tab **terminal**, change scroll back lines to 10,000
 
 ##### Optional settings
 
-  16. Click sub tab general
+  16. Under the Profiles tab click sub tab **general**
   17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
-  18. Click sub tab colors
+  18. Click sub tab **colors**
   19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
 
 ### Spectacle
@@ -191,17 +214,18 @@ This is the password you use to login to OSX on the current computer. If you are
 ### SublimeText 3
   1. Install Sublime Text 3 via Homebrew
 
-    - ```brew install caskroom/cask/brew-cask```
-    - ```brew tap caskroom/versions```
-    - ```brew cask install sublime-text3```
+    - ```=>$ brew install caskroom/cask/brew-cask```
+    - ```=>$ brew tap caskroom/versions```
+    - ```=>$ brew cask install sublime-text3```
     - Provide system password when prompted
 
   2. Install Sublime Text 3 Package Manager
 
     - Copy the script from [ST3](https://packagecontrol.io/installation#st3)
-    - Click View menu in sublime, then click Show console.
-    - Paste the script into the console and hit return.
-    - When finished restart Sublime Text.
+    - Click View menu in Sublime
+    - Click Show console
+    - Paste the script into the console that appeared at the bottom of the window and hit return
+    - When finished exit and restart Sublime Text
 
   3. Install the following packages (install packages with ```cmd+shift+p install```)
 
@@ -266,16 +290,16 @@ This is the password you use to login to OSX on the current computer. If you are
   ```
 
   5. Check sublime to confirm installation.
-  In iTerm ``` subl . ```
+  In iTerm ``` =>$ subl . ```
 
   This should open a sublime window for the current directory.
 
 ### heroku toolbelt
   1. Install heroku toolbelt vai homebrew
-  ``` brew install heroku-toolbelt ```
+  ``` =>$ brew install heroku-toolbelt ```
 
   2. Check heroku version to confirm installation.
-  ``` heroku --version ```
+  ``` =>$ heroku --version ```
 
   3. Which should return _something like_
   ```bash
@@ -288,18 +312,31 @@ This is the password you use to login to OSX on the current computer. If you are
   heroku-git@2.4.5
   ```
 
+  4. Login to the Heroku CLI Toolkit now using
+  ```
+  =>$ heroku login
+  ```
+
+  You should see something like this. Note the email and password are specifically your Heroku email and password.
+
+  ```
+  Enter your Heroku credentials.
+  Email: adam@example.com
+  Password (typing will be hidden):
+  Authentication successful.
+  ```
 ### Node - NPM
 
   1. Install Node via Homebrew
-    ``` brew install node ```
+    ``` =>$ brew install node ```
   2. Check node version to confirm installation.
-    ``` node -v ```
+    ``` =>$ node -v ```
 
   3. Which should return _something like_
     ``` v4.1.1 ```
 
   4. Check NPM version to confirm installation.
-    ``` npm -v ```
+    ``` =>$ npm -v ```
 
   5. Which should return _something like_
     ``` 2.14.4 ```
@@ -307,11 +344,11 @@ This is the password you use to login to OSX on the current computer. If you are
 ### postgres
 
   1. Install Postgresql via Homebrew.
-  ``` brew install postgres ```
+  ``` =>$ brew install postgres ```
 
   2. Start the Postgresql server.
 
-  Notice the messages displayed after completion. When a developer cares enough to put in some extra text after the script runs, you should care enough to read it...
+  Notice the messages displayed after completion. Typical OK 200 in Bash is nothing at all. When things go well Bash doesn't tell you about it. That said, when a developer cares enough to put in some extra text after the script runs, you should care enough to read it... Post install here will read something like:
 
   ```bash
   To have launchd start postgresql at login:
@@ -321,10 +358,12 @@ This is the password you use to login to OSX on the current computer. If you are
   launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
   ```
 
-  Run the commands above to setup && autostart Postgres.
+  I'm fairly confident though that the post install message will have changed from the time of this writing until now as you are reading it. Pay attention to these messages and follow instructions.
+
+  Run whatever commands provided after installation to setup && autostart Postgres.
 
   3. Check postgresql version to confirm installation.
-  ``` psql --version ```
+  ``` =>$ psql --version ```
 
   4. Which should return _something like_
   ``` psql (PostgreSQL) 9.4.0 ```
@@ -332,10 +371,10 @@ This is the password you use to login to OSX on the current computer. If you are
 ### sqlite3
 
   1. Install sqlite3 via Homebrew
-  ``` brew install sqlite ```
+  ``` =>$ brew install sqlite ```
 
   2. Check sqlite3 version to confirm installation.
-  ``` sqlite3 --version ```
+  ``` =>$ sqlite3 --version ```
 
   3. Which should return _something like_
   ``` 3.8.5 2014-08-15 22:37:57 c8ade949d4a2eb3bba4702a4a0e17b405e9b6ace ```
@@ -343,17 +382,17 @@ This is the password you use to login to OSX on the current computer. If you are
 ### mysql
 
   1. Install mysql via Homebrew
-  ``` brew install mysql ```
+  ``` =>$ brew install mysql ```
 
   2. Start the mysql server
   ```bash
-  ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+  =>$ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+  =>$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
   ```
 
   2. Check mysql version to confirm installation.
-  ``` mysql --version ```
+  ``` =>$ mysql --version ```
 
   3. Which should return _something like_
   ``` mysql  Ver 14.14 Distrib 5.7.11, for osx10.10 (x86_64) using  EditLine wrapper ```
@@ -361,10 +400,10 @@ This is the password you use to login to OSX on the current computer. If you are
 ### MongoDB
 
   1. Install MongoDB via Homebrew
-  ``` brew install mongodb --with-openssl ```
+  ``` =>$ brew install mongodb --with-openssl ```
 
   2. Check Mongo version to confirm installation.
-  ``` mongo —version ```
+  ``` =>$ mongo —version ```
 
   ADD POST INSTALL NOTES FOR MONGO
 
@@ -374,10 +413,10 @@ This is the password you use to login to OSX on the current computer. If you are
 ### Rails
 
   1. Install Rails via Gem
-  ``` gem install rails ```
+  ``` =>$ gem install rails ```
 
   2. Check Rails version to confirm installation.
-  ``` rails —v ```
+  ``` =>$ rails —v ```
 
   3. Which should return _something like_
   ``` Rails 4.2.6 ```
@@ -448,20 +487,20 @@ Now that you're all installed and whatnot. Here are some recommended setting to 
 - Right-click the vertical bar in the Dock. Toggle ``` automatically hide Dock ```
 - Set global no ri no rdoc
 ```bash
- echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
+ =>$ echo "gem: --no-ri --no-rdoc" >> ~/.gemrc
 ```
 - Set global rspec settings
 ```bash
-echo $'--color\n--tty\n--format documentation' >> ~/.rspec
+=>$ echo $'--color\n--tty\n--format documentation' >> ~/.rspec
 ```
 
 ## Additional Recommended Applications
 
 Terminal Apps
 
-- ``` brew install hub ``` -- Extended Git commands in terminal.
-- ``` brew install imagemagick ``` -- Super awesome gem for dealing with image files.
-- ``` brew install tree ``` -- Nice way to display tree structure of a directory in terminal.
+- ``` =>$ brew install hub ``` -- Extended Git commands in terminal.
+- ``` =>$ brew install imagemagick ``` -- Super awesome gem for dealing with image files.
+- ``` =>$ brew install tree ``` -- Nice way to display tree structure of a directory in terminal.
 
 OSX Apps
 
