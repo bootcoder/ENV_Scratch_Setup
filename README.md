@@ -1,6 +1,6 @@
 ## El Capitain Fresh Install
 
-### Estimated time for competition: 2:00 Hours
+### Estimated time for competition: 2 - 3 Hours
 
 ## Table of Contents:
 - General
@@ -10,7 +10,7 @@
   - [Xcode](#xcode) • [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#herok •toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
 
 - Applications
-  - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred 2](#alfred-2)
+  - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred](#alfred)
 
 - Databases
  - [postgres](#postgres) • [sqlite3](#sqlite3) • [mysql](#mysql) • [MongoDB](#mongodb)
@@ -19,7 +19,9 @@
 ## Forward:
 I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well.
 
-**Note:** If you're here because your existing Ruby ENV is mangled these notes most likely will not solve your problem.
+It's geared in such a way as to be non blocking to anyone with a basic experience level in OSX configuration.
+
+**Note:** If you're here because your existing Ruby ENV is mangled these notes don't apply.
 
 It is recommended that you follow the guide Top => Bottom. As with all things programming, **Order Matters**.
 
@@ -47,7 +49,7 @@ When I say open this program or that, the quickest path is usually via *Spotligh
 CMD+Spacebar Terminal
 ```
 
-Will open the terminal application. You'll find it's fuzzy search impressive, needing only a few characters to open popular apps. This advice still hold true even though I will instruct you to replace Spotlight with Alfred 2 in this tutorial. If you'd like more thoughts on efficiency as a dev check out [this link](https://github.com/bootcoder/tipsNtricks)
+Will open the terminal application. You'll find it's fuzzy search impressive, needing only a few characters to open popular apps. This advice remains true even though I will instruct you to replace Spotlight with Alfred in this tutorial. If you'd like more thoughts on efficiency as a dev check out [this link](https://github.com/bootcoder/tipsNtricks)
 
 ### A note on Passwords:
 
@@ -225,9 +227,15 @@ This is the password you use to login to OSX on the current computer. If you are
     - Click View menu in Sublime
     - Click Show console
     - Paste the script into the console that appeared at the bottom of the window and hit return
+    - You'll know it's complete when a new tab opens with Package Manager info.
     - When finished exit and restart Sublime Text
 
-  3. Install the following packages (install packages with ```cmd+shift+p install```)
+  3. Install the following packages
+
+    From Sublime do
+      1. Use ```CMD+Shift+p``` to open Sublime command fuzzy search
+      2. Start typing ```install```, hit enter when you see "Package Control: Install Package"
+      3. Start typing the name of the package you want, hit return when you see it.
 
     - All Autocomplete
     - Better CoffeeScript
@@ -252,9 +260,13 @@ This is the password you use to login to OSX on the current computer. If you are
 
   4. Apply custom user settings (open user settings with ```cmd+shift+p user```)
 
-    **Note:** Some of these settings will break Sublime if the corresponding package is not installed. If you did not install theme || color scheme remove the lines before saving the file.
+    Here is a sample from my editor.
 
-    ```
+    **Note:** Some of these settings will break Sublime if the corresponding package is not installed. If you did not install theme || color scheme remove the lines before saving the file.
+    **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
+    **Note:** Do not edit the Default Settings in Sublime. These will be overwritten whenever Sublime is updated. Always store user settings in.... Preferences: Settings - User.
+
+    ```json
     {
     "atomic_save": false,
     "bold_folder_labels": true,
@@ -264,7 +276,7 @@ This is the password you use to login to OSX on the current computer. If you are
     "ensure_newline_at_eof_on_save": true,
     "fade_fold_buttons": false,
     "font_face": "Inconsolata",
-    "font_size": 14,
+    "font_size": 17,
     "highlight_line": true,
     "ignored_packages":
     [
@@ -446,11 +458,11 @@ This is the password you use to login to OSX on the current computer. If you are
   7. Under hotkey tab, set to ``` cmd + cntr + / ```
   8. Under appearance tab, set all three values down the middle
 
-### Alfred 2
-  1. Download [Alfred 2](https://cachefly.alfredapp.com/Alfred_2.8.3_435.zip)
+### Alfred
+  1. Download [Alfred](https://www.alfredapp.com)
   2. Open finder
   3. Go to downloads
-  4. Drag the Alfred 2 app into the applications folder
+  4. Drag the Alfred app into the applications folder
   5. Use spotlight to open Alfred
   6. Choose open
   7. Choose OK to access contacts
@@ -504,11 +516,11 @@ Terminal Apps
 
 OSX Apps
 
-- Dash -- Great documentation and snippet management software.
-- Postman -- Simple easy API exploration tool.
-- Private Internet Access -- Best $40.00 I spend all year EVERY YEAR. Secure INTERNET connection from anywhere as well as an easy bypass to geographical restrictions. Moral of the story: I can do banking stuff from open WIFI in Starbucks while streaming a soccer match that is in blackout anywhere outside of the UK. All with 0 worries.
-- Flux -- Adjusts the chroma setting of your display based on the time of day.
-- Dropbox -- Every line of code I've ever written resides in my dropbox. Moral of the story: I can throw my laptop out the window and give 0 cares.
+- [Dash](https://kapeli.com/dash) -- Great documentation and snippet management software.
+- [Postman](https://www.getpostman.com/) -- Simple easy API exploration tool.
+- [Private Internet Access](https://www.privateinternetaccess.com/) -- Best $40.00 I spend all year EVERY YEAR. Secure INTERNET connection from anywhere as well as an easy bypass to geographical restrictions. Moral of the story: I can do banking stuff from open WIFI in Starbucks while streaming a soccer match that is in blackout anywhere outside of the UK. All with 0 worries.
+- [f.lux](https://justgetflux.com/) -- Adjusts the chroma setting of your display based on the time of day.
+- [Dropbox](https://www.dropbox.com/) -- Every line of code I've ever written resides in my dropbox. Moral of the story: I can throw my laptop out the window and give 0 cares.
 - Chrome Extensions
   - colorzilla -- Helpful color picker.
   - currently -- Nice new tab page, clean and useful
@@ -518,5 +530,8 @@ OSX Apps
   - Tab Scissors -- Use in conjunction with OneTab. Tab scissors takes everything from the right of the current tab and opens it in a new window, removing it from the current window. Super useful.
 
 
-## Notes
-- Add Brew install Redis
+
+### Fin
+Thanks for stopping by. Hope this helped,
+
+BootCoder
