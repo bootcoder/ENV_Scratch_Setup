@@ -520,6 +520,7 @@ Terminal Apps
 
 OSX Apps
 
+- [VLC](http://www.videolan.org/vlc/index.html) -- Best media player out there for like a decade now.
 - [Dash](https://kapeli.com/dash) -- Great documentation and snippet management software.
 - [Postman](https://www.getpostman.com/) -- Simple easy API exploration tool.
 - [Private Internet Access](https://www.privateinternetaccess.com/) -- Best $40.00 I spend all year EVERY YEAR. Secure INTERNET connection from anywhere as well as an easy bypass to geographical restrictions. Moral of the story: I can do banking stuff from open WIFI in Starbucks while streaming a soccer match that is in blackout anywhere outside of the UK. All with 0 worries.
