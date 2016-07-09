@@ -17,7 +17,7 @@
 
 
 ## Forward:
-I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well.
+I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. I'm not saying this collection of software tools is the end all greatest, there are lots of options available, but if you need to get up and running you can create this environment and things will be pretty good.
 
 It's geared in such a way as to be non blocking to anyone with a basic experience level in OSX configuration.
 
@@ -116,37 +116,6 @@ This is the password you use to login to OSX on the current computer. If you are
 
     - ``` =>$ git config --global user.email "BLANK (ex: you@example.com) ```
 
-
-### dotfiles
-
-  1. From terminal change directory to the desktop.
-  ```bash
-  =>$ cd ~/Desktop
-  ```
-
-  2. Clone Topher's DotFiles onto the desktop.
-  ```bash
-  =>$ git clone https://github.com/supertopher/dotfiles.git
-  ```
-
-  3. Change directories into the repo.
-  ```bash
-  =>$ cd dotfiles
-  ```
-
-  4. Run the script to acquire Bash goodies.
-  ```bash
-  =>$ ./install
-  ```
-
-  5. Restart or open a new terminal tab (CMD+t) to see changes. Any Bash changes will not apply to the current terminal session running.
-
-  6. Go up one level and remove the dotfiles directory
-   ```bash
-   =>$ cd ..
-   =>$ rm -rf dotfiles
-   ```
-
 ### rbenv
 
   1. Install rbenv via Homebrew
@@ -198,6 +167,36 @@ This is the password you use to login to OSX on the current computer. If you are
   17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
   18. Click sub tab **colors**
   19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
+
+### dotfiles
+
+  1. From terminal change directory to the desktop.
+  ```bash
+  =>$ cd ~/Desktop
+  ```
+
+  2. Clone Topher's DotFiles onto the desktop.
+  ```bash
+  =>$ git clone https://github.com/supertopher/dotfiles.git
+  ```
+
+  3. Change directories into the repo.
+  ```bash
+  =>$ cd dotfiles
+  ```
+
+  4. Run the script to acquire Bash goodies.
+  ```bash
+  =>$ ./install
+  ```
+
+  5. Restart or open a new terminal tab (CMD+t) to see changes. Any Bash changes will not apply to the current terminal session running.
+
+  6. Go up one level and remove the dotfiles directory
+   ```bash
+   =>$ cd ..
+   =>$ rm -rf dotfiles
+   ```
 
 ### Spectacle
   1. Download [Spectacle](https://www.spectacleapp.com/)
