@@ -2,6 +2,9 @@
 
 ### Estimated time for competition: 2 - 3 Hours
 
+#### Things Change:
+The guide provides some very exact syntax for install 'all the things' at the time of this writing. While I will try to update it as necessary, there is a very real possibility some command or some option will not be present or work the way it once did. No big deal. Just play around a bit, Google around a bit and figure it out a bit. Literally all the information below was derived from goggling `osx install X`.
+
 ## Table of Contents:
 - General
   - [Start Here](#forward) • [Initial System Settings](#system-settings) • [Software Recommendations](#additional-recommended-applications)
@@ -31,15 +34,17 @@ This guide denotes terminal entries with the following character combination:
 ```
 =>$
 ```
-The dollar **$** symbol is frequently used in tutorials to denote a terminal entry. Just being extra clear here, because I see this mistake a lot. **Do Not** include the $ when you type out the commands into terminal. Also it's worth noting that your terminal prompt most likely does not look like mine.
+The dollar **$** symbol is frequently used in tutorials to denote a terminal entry. Just being extra clear here, because I see this mistake a lot. **Do Not** include the $ when you type out the commands into terminal. Also it's worth noting that your terminal prompt most likely does not look like mine. That's OK too.
 
-### Contributing:
+  ### Contributing:
 
-If you feel super strongly about something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
+  If you feel I've missed something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
 
-As to the subject matter itself, if you don't agree in my choice of software that's awesome!
+  If you feel have critical updates or just want to contribute in general, *Please fork it, contribute and open a pull request.*
 
-But for seriouslies, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE HERE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE HERE```.
+  As to the subject matter itself, if you don't agree in my choice of software that's awesome!
+
+  But for seriouslies, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE HERE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE HERE```.
 
 ### B-E-EFFICIENT
 
@@ -67,8 +72,9 @@ Apple ID can be used to access the App Store as well as sync different devices v
 
 This is the password you use to login to OSX on the current computer. If you are prompted for a password at the terminal it is asking for the System Password.
 
-# Start Installation
 ---
+
+# Start Installation
 
 ### Xcode
 
@@ -221,8 +227,8 @@ This is the password you use to login to OSX on the current computer. If you are
 
     - ```=>$ brew install caskroom/cask/brew-cask```
     - ```=>$ brew tap caskroom/versions```
-    - ```=>$ brew cask install sublime-text3```
-    - Provide system password when prompted
+    - ```=>$ brew cask install sublime-text```
+    - Provide system password when/if prompted
 
   2. Install Sublime Text 3 Package Manager
 
@@ -437,7 +443,6 @@ This is the password you use to login to OSX on the current computer. If you are
   ``` Rails 4.2.6 ```
 
   ProTip: Don't ever EVER use sudo to install a GEM. IDC what the internet tells you. If you are using sudo to install a GEM you are doing it WRONG.
-
 
 ### Chrome
   1. Download [Chrome](https://www.google.com/chrome/browser/desktop/)
