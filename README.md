@@ -538,7 +538,17 @@ OSX Apps
   - One Tab -- Collapse all tabs down into a single tab that lists them out in a shareable format. Does not retain active session. Since each tab is a separate process this can be a HUGE memory saver. Best extension ever.
   - Tab Scissors -- Use in conjunction with OneTab. Tab scissors takes everything from the right of the current tab and opens it in a new window, removing it from the current window. Super useful.
 
+----
 
+### Contributing:
+
+If you feel I've missed something or if you find a pain point I didn't document, *Please [open an issue](https://github.com/bootcoder/ENV_Scratch_Setup/issues).* Feedback always greatly appreciated.
+
+If you have critical updates or just want to contribute in general, *Please fork it, contribute and open a pull request.*
+
+As to the subject matter itself, if you don't agree in my choice of software that's awesome!
+
+But for seriouslies, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE HERE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE HERE```.
 
 ### Fin
 Thanks for stopping by. Hope this helped,
