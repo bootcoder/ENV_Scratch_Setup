@@ -30,6 +30,8 @@ It is recommended that you follow the guide Top => Bottom. As with all things pr
 
 You should be comfortable with the command line before starting this tutorial. Read this [Command Line Quick Reference & Tips](http://learntocodewith.me/command-line/unix-command-cheat-sheet/) if you need a refresher.
 
+Additionally, if you are to 'know what you're doing' with your dev environment you should know a bit about how the ```PATH``` variable works. If this term is foreign to you take a minute to read [this article](https://cbednarski.com/articles/understanding-environment-variables-and-the-unix-path/).
+
 This guide denotes terminal entries with the following character combination:
 ```
 =>$
