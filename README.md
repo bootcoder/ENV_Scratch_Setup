@@ -427,8 +427,12 @@ This is the password you use to login to OSX on the current computer. If you are
 
   2. Check Mongo version to confirm installation.
   ``` =>$ mongo —version ```
-
-  ADD POST INSTALL NOTES FOR MONGO
+  ```bash
+  To have launchd start mongodb now and restart at login:
+  brew services start mongodb
+Or, if you don't want/need a background service you can just run:
+  mongod --config /usr/local/etc/mongod.conf
+  ```
 
   3. Which should return _something like_
   ``` MongoDB shell version: 3.0.4 ```
