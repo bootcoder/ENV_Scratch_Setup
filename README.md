@@ -215,26 +215,22 @@ This is the password you use to login to OSX on the current computer. If you are
   14. Check ``` Launch Spectacle at login ```
 
 ### SublimeText 3
-  1. Install Sublime Text 3 via Homebrew
+  1. Install Sublime Text 3 via HomeBrew Cask
 
-    - ```=>$ brew install caskroom/cask/brew-cask```
-    - ```=>$ brew tap caskroom/versions```
-    - ```=>$ brew cask install sublime-text```
+    - ```brew cask```
+    - ```brew cask install sublime-text```
     - Provide system password when/if prompted
 
   2. Install Sublime Text 3 Package Manager
 
-    - Copy the script from [ST3](https://packagecontrol.io/installation#st3)
-    - Click View menu in Sublime
-    - Click Show console
-    - Paste the script into the console that appeared at the bottom of the window and hit return
-    - You'll know it's complete when a new tab opens with Package Manager info.
+    - In Sublime use ```CMD+Shift+P``` to bring up the command pallet
+    - Type ```Install``` and you can select an option for ```Install Package Manager```
     - When finished exit and restart Sublime Text
 
   3. Install the following packages
 
     From Sublime do
-      1. Use ```CMD+Shift+p``` to open Sublime command fuzzy search
+      1. Use ```CMD+Shift+P``` to open Sublime command fuzzy search
       2. Start typing ```install```, hit enter when you see "Package Control: Install Package"
       3. Start typing the name of the package you want, hit return when you see it.
 
@@ -244,7 +240,6 @@ This is the password you use to login to OSX on the current computer. If you are
     - ERB Snippets
     - GitGutter
     - Haml
-    - JSLint
     - JSX
     - Markdown Preview
     - Package Control
@@ -259,11 +254,11 @@ This is the password you use to login to OSX on the current computer. If you are
     - Tomorrow Color Scheme
     - Theme - Tech49
 
-  4. Apply custom user settings (open user settings with ```cmd+shift+p user```)
+  4. Apply custom user settings (open user settings with ```CMD+Shift+P user```)
 
     Here is a sample from my editor.
 
-    **Note:** Some of these settings will break Sublime if the corresponding package is not installed. If you did not install theme || color scheme remove the lines before saving the file.
+    **Note:** Some of these settings will break Sublime if the corresponding package is not installed first. If you did not install theme || color scheme remove the applicable lines before saving the file.
     **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
     **Note:** Do not edit the Default Settings in Sublime. These will be overwritten whenever Sublime is updated. Always store user settings in.... Preferences: Settings - User.
 
