@@ -3,14 +3,16 @@
 ### Estimated time for competition: 1 - 2 Hours
 
 #### Things Change:
+
 The guide provides some very exact syntax for install 'all the things' at the time of this writing. While I will try to update it as necessary, there is a very real possibility some command or some option will not be present or work the way it once did. No big deal. Just play around a bit, Google around a bit and figure it out a bit. Literally all the information below was derived from goggling `osx install X`.
 
 ## Table of Contents:
+
 - General
   - [Start Here](#forward) • [Initial System Settings](#system-settings) • [Software Recommendations](#additional-recommended-applications)
 
 - Languages / Frameworks
-  - [Xcode](#xcode) • [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#herok •toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
+  - [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#herok •toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
 
 - Applications
   - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred](#alfred)
@@ -20,6 +22,7 @@ The guide provides some very exact syntax for install 'all the things' at the ti
 
 
 ## Forward:
+
 I put together this guide to assist young developers in setting up new OSx hardware. It is built to start from a clean installation of OSX El Capitain. Older versions of OSX should work as well. I'm not saying this collection of software tools is the end all greatest, there are lots of options available, but if you need to get up and running you can create this environment and things will be pretty good.
 
 It's geared in such a way as to be non blocking to anyone with a basic experience level in OSX configuration.
@@ -78,7 +81,6 @@ This is the password you use to login to OSX on the current computer. If you are
 
 # Start Installation
 
-
 ### HomeBrew
 
   1. Install Homebrew
@@ -87,7 +89,7 @@ This is the password you use to login to OSX on the current computer. If you are
 
     In the terminal application paste it in: (It probably looks a lot like this)
 
-    ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+    ```=>$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
     This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule. Give it root access whenever it asks. Confidence is very high that HomeBrew won't set any permissions incorrectly.
 
@@ -547,6 +549,7 @@ As to the subject matter itself, if you don't agree in my choice of software tha
 But for seriouslies, I'm not saying I don't care about or appreciate how much better ```INSERT RANDO SOFTWARE TITLE HERE``` is. I'm just saying I've heard... it's cool. No need to track me down, shake me around and pontificate furiously whilst cycling through the virtues of ```INSERT RANDO SOFTWARE TITLE HERE```.
 
 ### Fin
-Thanks for stopping by. Hope this helped,
+
+Thanks for stopping by. Hope this helped. Happy Hacking,
 
 BootCoder
