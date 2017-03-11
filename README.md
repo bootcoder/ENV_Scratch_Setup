@@ -139,6 +139,7 @@ This is the password you use to login to OSX on the current computer. If you are
   ``` =>$ rbenv global 2.3.1 ```
 
 ### iTerm
+
   1. Download [iTerm 3](https://www.iterm2.com/version3.html)
   2. Open finder
   3. Go to downloads
@@ -197,6 +198,7 @@ This is the password you use to login to OSX on the current computer. If you are
    ```
 
 ### Spectacle
+
   1. Download [Spectacle](https://www.spectacleapp.com/)
   2. Open finder
   3. Go to downloads
@@ -215,6 +217,7 @@ This is the password you use to login to OSX on the current computer. If you are
   14. Check ``` Launch Spectacle at login ```
 
 ### SublimeText 3
+
   1. Install Sublime Text 3 via HomeBrew Cask
 
     - ```brew cask```
@@ -302,7 +305,8 @@ This is the password you use to login to OSX on the current computer. If you are
 
   This should open a sublime window for the current directory.
 
-### heroku toolbelt
+### Heroku toolbelt
+
   1. Install heroku toolbelt vai homebrew
   ``` =>$ brew install heroku-toolbelt ```
 
@@ -432,18 +436,21 @@ This is the password you use to login to OSX on the current computer. If you are
   ProTip: Don't ever EVER use sudo to install a GEM. IDC what the internet tells you. If you are using sudo to install a GEM you are doing it WRONG.
 
 ### Chrome
+
   1. Download [Chrome](https://www.google.com/chrome/browser/desktop/)
   2. Open downloads in finder
   3. Run the .dmg installer
   4. Drag into provided applications folder
 
 ### Firefox
+
   1. Download [Firefox](https://www.mozilla.org/en-US/firefox/new/)
   2. Open downloads in finder
   3. Run the .dmg installer
   4. Drag into applications folder
 
 ### Flycut
+
   1. Download from app store
   2. Open Flycut
   3. Click the red flycut icon in the menu bar
@@ -454,6 +461,7 @@ This is the password you use to login to OSX on the current computer. If you are
   8. Under appearance tab, set all three values down the middle
 
 ### Alfred
+
   1. Download [Alfred](https://www.alfredapp.com)
   2. Open finder
   3. Go to downloads
@@ -476,6 +484,7 @@ This is the password you use to login to OSX on the current computer. If you are
 
 
 #### Settings
+
   1. Set your location to the United States
   2. Appearance tab
     - Theme sub tab
