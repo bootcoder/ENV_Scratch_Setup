@@ -78,18 +78,6 @@ This is the password you use to login to OSX on the current computer. If you are
 
 # Start Installation
 
-### Xcode
-
-  1. Install Xcode from the App Store application. (This will take A WHILE)
-    - Open App store
-    - Search for Xcode
-    - Install
-    - Enter your AppleID credentials when prompted.
-
-  2. Open terminal run ```=>$ xcode-select --install```
-    - Follow the prompts
-    - When finished open the Xcode app
-    - Agree to the license, enter your password when prompted, wait until the welcome screen comes up, then exit Xcode.
 
 ### HomeBrew
 
