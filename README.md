@@ -1,6 +1,6 @@
 ## El Capitain Fresh Install
 
-### Estimated time for competition: 2 - 3 Hours
+### Estimated time for competition: 1 - 2 Hours
 
 #### Things Change:
 The guide provides some very exact syntax for install 'all the things' at the time of this writing. While I will try to update it as necessary, there is a very real possibility some command or some option will not be present or work the way it once did. No big deal. Just play around a bit, Google around a bit and figure it out a bit. Literally all the information below was derived from goggling `osx install X`.
@@ -81,13 +81,15 @@ This is the password you use to login to OSX on the current computer. If you are
 
 ### HomeBrew
 
-  1. Install Homebrew with Curl.
+  1. Install Homebrew
 
-    In the terminal application run:
+    Head on over to the [HomeBrew site](https://brew.sh/) and copy the link.
 
-    ``` =>$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" ```
+    In the terminal application paste it in: (It probably looks a lot like this)
 
-    This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule.
+    ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+
+    This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule. Give it root access whenever it asks. Confidence is very high that HomeBrew won't set any permissions incorrectly.
 
   Homebrew ProTip: Before brewing anything now and in the future, you should first run and resolve,
 
