@@ -83,21 +83,21 @@ This is the password you use to login to OSX on the current computer. If you are
 
 ### HomeBrew
 
-  1. Install Homebrew
+  Head on over to the [HomeBrew site](https://brew.sh/) and copy the link.
 
-    Head on over to the [HomeBrew site](https://brew.sh/) and copy the link.
+  In the terminal application paste it in: (It probably looks a lot like this)
 
-    In the terminal application paste it in: (It probably looks a lot like this)
+  ```bash
+  =>$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  ```
 
-    ```=>$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
-
-    This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule. Give it root access whenever it asks. Confidence is very high that HomeBrew won't set any permissions incorrectly.
+  This process will prompt you for your system password. Most times in your day to day developer life you want to avoid using SUDO to perform installations. Homebrew is an exception to this rule. Give it root access whenever it asks. Confidence is very high that HomeBrew won't set any permissions incorrectly.
 
   Homebrew ProTip: Before brewing anything now and in the future, you should first run and resolve,
 
-    ``` =>$ brew update ```
+  ```=>$ brew update```
 
-    ``` =>$ brew doctor ```
+  ```=>$ brew doctor```
 
 ### Git
 
@@ -234,10 +234,10 @@ This is the password you use to login to OSX on the current computer. If you are
 
   3. Install the following packages
 
-    From Sublime do
-      1. Use ```CMD+Shift+P``` to open Sublime command fuzzy search
-      2. Start typing ```install```, hit enter when you see "Package Control: Install Package"
-      3. Start typing the name of the package you want, hit return when you see it.
+  From Sublime do
+    1. Use ```CMD+Shift+P``` to open Sublime command fuzzy search
+    2. Start typing ```install```, hit enter when you see "Package Control: Install Package"
+    3. Start typing the name of the package you want, hit return when you see it.
 
     - All Autocomplete
     - Better CoffeeScript
@@ -261,44 +261,46 @@ This is the password you use to login to OSX on the current computer. If you are
 
   4. Apply custom user settings (open user settings with ```CMD+Shift+P user```)
 
-    Here is a sample from my editor.
+  Here is a sample from my editor.
 
-    **Note:** Some of these settings will break Sublime if the corresponding package is not installed first. If you did not install theme || color scheme remove the applicable lines before saving the file.
-    **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
-    **Note:** Do not edit the Default Settings in Sublime. These will be overwritten whenever Sublime is updated. Always store user settings in.... Preferences: Settings - User.
+  **Note:** Some of these settings will break Sublime if the corresponding package is not installed first. If you did not install theme || color scheme remove the applicable lines before saving the file.
 
-    ```json
-    {
-    "atomic_save": false,
-    "bold_folder_labels": true,
-    "caret_style": "phase",
-    "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
-    "draw_white_space": "selection",
-    "ensure_newline_at_eof_on_save": true,
-    "fade_fold_buttons": false,
-    "font_face": "Inconsolata",
-    "font_size": 17,
-    "highlight_line": true,
-    "ignored_packages":
-    [
-      "Emmet",
-      "PlainTasks",
-      "RubyTest",
-      "Theme - Farzher",
-      "Vintage"
-    ],
-    "line_padding_bottom": 1,
-    "line_padding_top": 1,
-    "rulers":
-    [
-      80
-    ],
-    "save_on_focus_lost": true,
-    "spell_check": true,
-    "tab_size": 2,
-    "theme": "Tech49.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "trim_trailing_white_space_on_save": true
+  **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
+
+  **Note:** Do not edit the Default Settings in Sublime. These will be overwritten whenever Sublime is updated. Always store user settings in.... Preferences: Settings - User.
+
+  ```json
+  {
+  "atomic_save": false,
+  "bold_folder_labels": true,
+  "caret_style": "phase",
+  "color_scheme": "Packages/User/SublimeLinter/Tomorrow-Night (SL).tmTheme",
+  "draw_white_space": "selection",
+  "ensure_newline_at_eof_on_save": true,
+  "fade_fold_buttons": false,
+  "font_face": "Inconsolata",
+  "font_size": 17,
+  "highlight_line": true,
+  "ignored_packages":
+  [
+    "Emmet",
+    "PlainTasks",
+    "RubyTest",
+    "Theme - Farzher",
+    "Vintage"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "rulers":
+  [
+    80
+  ],
+  "save_on_focus_lost": true,
+  "spell_check": true,
+  "tab_size": 2,
+  "theme": "Tech49.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
   }
   ```
 
@@ -362,19 +364,13 @@ This is the password you use to login to OSX on the current computer. If you are
 
   2. Start the Postgresql server.
 
-  Notice the messages displayed after completion. Typical OK 200 in Bash is nothing at all. When things go well Bash doesn't tell you about it. That said, when a developer cares enough to put in some extra text after the script runs, you should care enough to read it... Post install here will read something like:
+  Notice the messages displayed after completion. Typical OK 200 in Bash is nothing at all. When things go well Bash doesn't tell you about it. That said, when a developer cares enough to put in some extra text after the script runs, you should care enough to read it... Post install here will most likely contain this line:
 
   ```bash
-  To have launchd start postgresql at login:
-  mkdir -p ~/Library/LaunchAgents
-  ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents
-  Then to load postgresql now:
-  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+    =>$ brew services start postgresql
   ```
 
-  I'm fairly confident though that the post install message will have changed from the time of this writing until now as you are reading it. Pay attention to these messages and follow instructions.
-
-  Run whatever commands provided after installation to setup && autostart Postgres.
+  Go ahead and run that to have brew start up postgres.
 
   3. Check postgresql version to confirm installation.
   ``` =>$ psql --version ```
