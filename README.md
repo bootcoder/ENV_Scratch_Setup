@@ -12,7 +12,7 @@ The guide provides some very exact syntax for install 'all the things' at the ti
   - [Start Here](#forward) • [Initial System Settings](#system-settings) • [Software Recommendations](#additional-recommended-applications)
 
 - Languages / Frameworks
-  - [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#herok •toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
+  - [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#heroku-toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
 
 - Applications
   - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred](#alfred)
@@ -414,8 +414,12 @@ This is the password you use to login to OSX on the current computer. If you are
 
   2. Check Mongo version to confirm installation.
   ``` =>$ mongo —version ```
-
-  ADD POST INSTALL NOTES FOR MONGO
+  ```bash
+  To have launchd start mongodb now and restart at login:
+  brew services start mongodb
+Or, if you don't want/need a background service you can just run:
+  mongod --config /usr/local/etc/mongod.conf
+  ```
 
   3. Which should return _something like_
   ``` MongoDB shell version: 3.0.4 ```
