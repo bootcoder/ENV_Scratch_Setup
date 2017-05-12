@@ -449,14 +449,13 @@ This is the password you use to login to OSX on the current computer. If you are
 
 ### Flycut
 
-  1. Download from app store
+  1. Install via HomeBrew Cask with ```=>$ brew cask install flycut```
   2. Open Flycut
   3. Click the red flycut icon in the menu bar
   4. Choose preferences
   5. Under general select launch @ login
   6. Reduce remember amount from 40 to 20
-  7. Under hotkey tab, set to ``` cmd + cntr + / ```
-  8. Under appearance tab, set all three values down the middle
+  7. Under appearance tab, set all three values down the middle
 
 ### Alfred
 
