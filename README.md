@@ -12,7 +12,7 @@ The guide provides some very exact syntax for install 'all the things' at the ti
   - [Start Here](#forward) • [Initial System Settings](#system-settings) • [Software Recommendations](#additional-recommended-applications)
 
 - Languages / Frameworks
-  - [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#heroku-toolbelt) • [Rails](#rails) • [Node - NPM](#node---npm)
+  - [HomeBrew](#homebrew) • [Git](#git) • [dotfiles](#dotfiles) • [rbenv](#rbenv) • [Heroku toolbelt](#heroku-toolbelt) • [Rails](#rails) • [NVM](#nvm)
 
 - Applications
   - [iterm](#iterm) • [spectacle](#spectacle) • [Sublime Text 3](#sublimetext-3) • [Chrome](#chrome) • [Firefox](#firefox) • [FlyCut](#flycut) • [Alfred](#alfred)
@@ -341,21 +341,25 @@ This is the password you use to login to OSX on the current computer. If you are
   Password (typing will be hidden):
   Authentication successful.
   ```
-### Node - NPM
+### NVM
 
-  1. Install Node via Homebrew
-    ``` =>$ brew install node ```
-  2. Check node version to confirm installation.
-    ``` =>$ node -v ```
+  1. Install [NVM](https://github.com/creationix/nvm)
+    ```=>$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash```
+  2. Close & restart your terminal
 
-  3. Which should return _something like_
-    ``` v4.1.1 ```
-
-  4. Check NPM version to confirm installation.
-    ``` =>$ npm -v ```
+  3. Install Node
+    ```nvm install node```
+  4. Check node version to confirm installation.
+    ```=>$ node -v```
 
   5. Which should return _something like_
-    ``` 2.14.4 ```
+    ```v4.1.1```
+
+  6. Check NPM version to confirm installation.
+    ```=>$ npm -v```
+
+  7. Which should return _something like_
+    ```2.14.4```
 
 ### postgres
 
