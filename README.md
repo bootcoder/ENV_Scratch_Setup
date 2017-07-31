@@ -202,8 +202,7 @@ This is the password you use to login to OSX on the current computer. If you are
   ``` =>$ brew cask install spectacle ```
   2. Use ‘spotlight’ to open spectacle for the first time
     - cmd + spacebar to open spotlight
-    - type spectacle hit return when you see it auto-populated
-  3. Choose open
+  3. Type spectacle hit return when you see it auto-populated
   4. Choose open system preferences
   5. Click the lock in the lower left
   6. Enter system password
@@ -229,29 +228,30 @@ This is the password you use to login to OSX on the current computer. If you are
   3. Install the following packages
 
   From Sublime do
+
     1. Use ```CMD+Shift+P``` to open Sublime command fuzzy search
     2. Start typing ```install```, hit enter when you see "Package Control: Install Package"
     3. Start typing the name of the package you want, hit return when you see it.
 
-    - All Autocomplete
-    - Better CoffeeScript
-    - BracketHighlighter
-    - ERB Snippets
-    - GitGutter
-    - Haml
-    - JSX
-    - Markdown Preview
-    - Package Control
-    - PowerCursors
-    - SASS
-    - SideBarEnhancements
-    - sublime-github
-    - SublimeLinter
-    - SublimeLinter-haml
-    - SublimeLinter-ruby
-    - TernJS
-    - Tomorrow Color Scheme
-    - Theme - Tech49
+      - All Autocomplete
+      - Better CoffeeScript
+      - BracketHighlighter
+      - ERB Snippets
+      - GitGutter
+      - Haml
+      - JSX
+      - Markdown Preview
+      - Package Control
+      - PowerCursors
+      - SASS
+      - SideBarEnhancements
+      - sublime-github
+      - SublimeLinter
+      - SublimeLinter-haml
+      - SublimeLinter-ruby
+      - TernJS
+      - Tomorrow Color Scheme
+      - Theme - Tech49
 
   4. Apply custom user settings (open user settings with ```CMD+Shift+P user```)
 
@@ -259,7 +259,8 @@ This is the password you use to login to OSX on the current computer. If you are
 
   **Note:** Some of these settings will break Sublime if the corresponding package is not installed first. If you did not install theme || color scheme remove the applicable lines before saving the file.
 
-  **Note:** If your editor goes white and throws an error just set the color from the top bar ```Sublime Text -> preferences -> Color Scheme -> Choose one you like```
+  **Note:** If your editor goes white and throws an error just set the color from the top bar
+  ```Sublime Text -> preferences -> Color Scheme -> Choose one you like```
 
   **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
 
@@ -337,6 +338,7 @@ This is the password you use to login to OSX on the current computer. If you are
   Password (typing will be hidden):
   Authentication successful.
   ```
+
 ### NVM
 
   1. Install [NVM](https://github.com/creationix/nvm)
