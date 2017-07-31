@@ -1,4 +1,4 @@
-## El Capitain Fresh Install
+## OSX || MacOS Clean Install
 
 ### Estimated time for competition: 1 - 2 Hours
 
