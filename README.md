@@ -142,32 +142,29 @@ This is the password you use to login to OSX on the current computer. If you are
 
 ### iTerm
 
-  1. Download [iTerm 3](https://www.iterm2.com/version3.html)
-  2. Open finder
-  3. Go to downloads
-  4. Drag the iTerm app into the applications folder on the sidebar
-  5. Now open the applications folder grab the iTerm app and drag it to your dock at the bottom of the screen.
-  6. cmd + spacebar enter iTerm and hit return
-  7. Choose open
-  8. Click iTerm in the top left corner dropdown.
+  1. Install cask for homebrew
+  ``` =>$ brew install cask ```
+  2. Install iTerm2
+  ``` =>$ brew cask install iterm2 ```
+  3. Wait 10 seconds then cmd + spacebar enter iTerm and hit return
 
 ##### Base settings
 
-  9. Click preferences
-  10. Click the keys tab
-  11. Check the box for hotkey in lower left
+  4. Click preferences
+  5. Click the keys tab
+  6. Check the box for hotkey in lower left
     - I use ``` cmd + \ ```
-  12. Click the profiles tab
-  13. Click the sub tab **window**
-  14. Slide the transparency slider over to about 20% (the goal is to be able to read text in a browser behind the window but not have it be bright enough to bother you)
-  15. Click the sub tab **terminal**, change scroll back lines to 10,000
+  7. Click the profiles tab
+  8. Click the sub tab **window**
+  9. Slide the transparency slider over to about 20% (the goal is to be able to read text in a browser behind the window but not have it be bright enough to bother you)
+  10. Click the sub tab **terminal**, change scroll back lines to 10,000
 
 ##### Optional settings
 
-  16. Under the Profiles tab click sub tab **general**
-  17. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
-  18. Click sub tab **colors**
-  19. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
+  11. Under the Profiles tab click sub tab **general**
+  12. De-select copy to pasteboard on selection ( I don’t want a bunch of terminal commands cluttering up my Flycut)
+  13. Click sub tab **colors**
+  14. The suggestion here is not to play around too much. The color scheme as it is works pretty well. However, I prefer ``` 00d0fa ``` for the foreground color. But that’s me so...
 
 ### dotfiles
 
