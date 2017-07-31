@@ -198,22 +198,20 @@ This is the password you use to login to OSX on the current computer. If you are
 
 ### Spectacle
 
-  1. Download [Spectacle](https://www.spectacleapp.com/)
-  2. Open finder
-  3. Go to downloads
-  4. Drag the Spectacle app into the applications folder
-  5. Use ‘spotlight’ to open spectacle for the first time
+  1. Install Spectacle via Brew Cask
+  ``` =>$ brew cask install spectacle ```
+  2. Use ‘spotlight’ to open spectacle for the first time
     - cmd + spacebar to open spotlight
     - type spectacle hit return when you see it auto-populated
-  6. Choose open
-  7. Choose open system preferences
-  8. Click the lock in the lower left
-  9. Enter system password
-  10. Check the box next to spectacle
-  11. Close system prefs
-  12. Open Spectacle Preferences
-  13. Click the right slider arrow at the bottom
-  14. Check ``` Launch Spectacle at login ```
+  3. Choose open
+  4. Choose open system preferences
+  5. Click the lock in the lower left
+  6. Enter system password
+  7. Check the box next to spectacle
+  8. Close system prefs
+  9. Open Spectacle Preferences
+  10. Click the right slider arrow at the bottom
+  11. Check ``` Launch Spectacle at login ```
 
 ### SublimeText 3
 
@@ -260,6 +258,8 @@ This is the password you use to login to OSX on the current computer. If you are
   Here is a sample from my editor.
 
   **Note:** Some of these settings will break Sublime if the corresponding package is not installed first. If you did not install theme || color scheme remove the applicable lines before saving the file.
+
+  **Note:** If your editor goes white and throws an error just set the color from the top bar ```Sublime Text -> preferences -> Color Scheme -> Choose one you like```
 
   **Note:** The sample below represents the user settings file. Do not simply append this to the bottom of what you have. The settings hash must be 1 complete unit.
 
