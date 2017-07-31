@@ -439,21 +439,18 @@ Or, if you don't want/need a background service you can just run:
 
 ### Chrome
 
-  1. Download [Chrome](https://www.google.com/chrome/browser/desktop/)
-  2. Open downloads in finder
-  3. Run the .dmg installer
-  4. Drag into provided applications folder
+  1. Install Chrome via Brew Cask
+  ``` =>$ brew cask install google-chrome ```
 
 ### Firefox
 
-  1. Download [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-  2. Open downloads in finder
-  3. Run the .dmg installer
-  4. Drag into applications folder
+  1. Install Firefox via Brew Cask
+  ``` =>$ brew cask install firefox ```
 
 ### Flycut
 
-  1. Install via HomeBrew Cask with ```=>$ brew cask install flycut```
+  1. Install via Brew Cask
+  ```=>$ brew cask install flycut```
   2. Open Flycut
   3. Click the red flycut icon in the menu bar
   4. Choose preferences
@@ -463,21 +460,19 @@ Or, if you don't want/need a background service you can just run:
 
 ### Alfred
 
-  1. Download [Alfred](https://www.alfredapp.com)
-  2. Open finder
-  3. Go to downloads
-  4. Drag the Alfred app into the applications folder
-  5. Use spotlight to open Alfred
-  6. Choose open
-  7. Choose OK to access contacts
-  8. Now we are going to disable spotlight and reassign ``` cmd + spacebar ``` to Alfred
+  1. Install via Brew Cask
+  ```=>$ brew cask install alfred```
+  2. Use spotlight to open Alfred
+  3. Choose open
+  4. Choose OK to access contacts
+  5. Now we are going to disable spotlight and reassign ``` cmd + spacebar ``` to Alfred
     - Use spotlight (cmd+spacebar) to open spotlight :-)
     - In the lower left corner of the system preferences pane choose keyboard shortcuts
     - Deselect the top option to disassociate spotlight with the cmd + space keys
     - Now close spotlight settings
     - Click back or reopen alfred settings
     - Set Alfred hotkey to cmd+Space under Alfred preferences
-  9. Disable Spotlight indexing to improve performance.
+  6. Disable Spotlight indexing to improve performance.
     - Open Alfred ``` cmd + spacebar ```
     - Enter ``` spotlight ``` to open spotlight preferences
     - Under the 'Search Results' tab, disable all options
