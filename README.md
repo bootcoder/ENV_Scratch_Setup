@@ -219,7 +219,6 @@ This is the password you use to login to OSX on the current computer. If you are
 
   1. Install Sublime Text 3 via HomeBrew Cask
 
-    - ```brew cask```
     - ```brew cask install sublime-text```
     - Provide system password when/if prompted
 
